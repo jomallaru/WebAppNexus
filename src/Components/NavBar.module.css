@@ -1,0 +1,53 @@
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: rgb(43, 85, 85);
+}
+
+.navOpen{
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: rgb(43, 85, 85);
+    position: absolute;
+    align-items: center;
+    justify-content: space-evenly ;
+
+}
+.navLink{
+    display: flex;
+    font-size: 2em;
+    font-weight: 500;
+    color: aliceblue;
+    padding-top: 30px;
+}
+
+.border{
+    display: flex;
+    animation-name: animacionborder;
+    animation-duration: 1s;
+    background-color: blue;
+
+}
+@keyframes  animacionborder{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 1px;
+    }
+}
+
+.logo{
+    display: flex;
+    color: rgb(196, 253, 255);
+    font-weight: 600px;
+
+}
+
+.linksContainer{
+    display: flex;
+    flex-direction: row;
+}
