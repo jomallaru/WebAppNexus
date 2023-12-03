@@ -19,7 +19,7 @@ const NavBar = () => {
     });
   };
 
-   useEffect(() => {
+  useEffect(() => {
     window.addEventListener("resize", detectDimension);
     windowDimension.width > 800 && setNavBarOpen(false);
     return () => {
@@ -28,7 +28,7 @@ const NavBar = () => {
   }, [windowDimension]);
 
 
-     const links = [
+  const links = [
     {
       id: 1,
       link: "Home",
@@ -49,31 +49,34 @@ const NavBar = () => {
 
   const scrollPosition = useScrollPosition();
 
-    return (
-        
+  return (
+
     <div
       className={
         navBarOpen
           ? styles.navOpen
           : scrollPosition > 0
-          ? styles.navOnScroll
-          : styles.navBar
+            ? styles.navOnScroll
+            : styles.navBar
       }
     >
-            {!navBarOpen && <p className={styles.logo}>WebApp nexus| Desarrollo de Aplicaciones Web</p>}
-            {!navBarOpen && windowDimension.width < 800 ? (
-                <CgMenuGridR onClick={() => setNavBarOpen(!navBarOpen)} size={30} />
-            ) : (
+      {!navBarOpen && <p className={styles.logo}>WebApp nexus| Desarrollo de Aplicaciones Web</p>}
+      {!navBarOpen && windowDimension.width < 800 ? (
+        <CgMenuGridR
+          color='#f1f1f1'
+          onClick={() => setNavBarOpen(!navBarOpen)}
+          size={30} />
+      ) : (
 
-                windowDimension.width < 800 && (
-                    <AiTwotoneCloseSquare
-                        onClick={() => setNavBarOpen(!navBarOpen)}
-                        size={30}
-                        color='#f1f1f1'
-                    />
-                )
-            )}
-            {navBarOpen && (
+        windowDimension.width < 800 && (
+          <AiTwotoneCloseSquare
+            onClick={() => setNavBarOpen(!navBarOpen)}
+            size={30}
+            color='#f1f1f1'
+          />
+        )
+      )}
+      {navBarOpen && (
         <ul className={styles.linksContainer}>
           {links.map(({ id, link }) => (
             <div>
@@ -85,7 +88,8 @@ const NavBar = () => {
                 duration={500}
                 className={styles.navLink}
               >
-                {link === "HowWeWork" ? "How we work" : link}
+                {link === "Service" ? "Productos" : link}
+                {link === "HowWeWork" ? "Como lo Hacemos" : link}
               </Link>
               <div className={styles.border}></div>
             </div>

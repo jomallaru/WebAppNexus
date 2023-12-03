@@ -1,0 +1,72 @@
+.services {
+  display: flex;
+  padding-top: 100px;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(0deg, #1a1826, #413b5e);
+  text-align: center;
+}
+
+.webImage {
+  width: 298px;
+  height: 193px;
+  padding-bottom: 80px;
+}
+
+.services p {
+  color: #f1f1f1;
+  font-size: 1.5em;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 800px) {
+  .services p {
+    font-size: 2.5em;
+  }
+  .webImage {
+    width: 596px;
+    height: 386px;
+  }
+}
+
+
+.webImage {
+  /* Estilos para la imagen de la web */
+  width: 50%; /* Ajusta el ancho según sea necesario */
+  height: auto; /* Mantén la proporción de aspecto original */
+  border-radius: 8px; /* Bordes redondeados para la imagen */
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px; /* Ajusta según sea necesario */
+}
+
+.card {
+  align-items: center;
+  flex: 0 1 calc(30% - 10px); /* Ajusta el ancho de la tarjeta según sea necesario */
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  
+}
+
+.card:hover {
+  
+  transform: scale(1.2);
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  font-size: 1.2rem;
+  color: #666;
+}
