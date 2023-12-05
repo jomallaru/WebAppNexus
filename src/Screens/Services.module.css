@@ -3,7 +3,7 @@
   padding-top: 100px;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(0deg, #1a1826, #413b5e);
+  background: radial-gradient(circle, #1d3a6a,  #061228);
   text-align: center;
 }
 
@@ -69,4 +69,25 @@
 .card p {
   font-size: 1.2rem;
   color: #666;
+}
+
+.textTitle {
+  text-align: center;  
+  top: 0;
+  width: 100%;
+  margin-top: 20px; /* Espaciado superior según sea necesario */
+  font-size: 1.5rem; /* Tamaño de fuente según sea necesario */
+  color: #fff; /* Color del texto */
+  white-space: nowrap; /* Evita el salto de línea */
+  overflow: hidden;
+  animation: karaoke 3s infinite; /* 5s es la duración, puedes ajustar según tus preferencias */
+}
+
+@keyframes karaoke {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }

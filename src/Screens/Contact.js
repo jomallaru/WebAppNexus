@@ -4,24 +4,25 @@ import styles from "./Contact.module.css";
 const Contact = () => {
   return (
     <div name="Contact" className={styles.contact}>
-      <h2>Contact</h2>
+      <h2>Contacto</h2>
       <form
         className={styles.form}
         method="POST"
-        action="https://getform.io/f/718583e8-f2fc-4e02-a970-9f8a6eaa2036"
+        action="https://getform.io/f/a10050cb-ca66-4c4c-af3a-260ef8b17201"
+        
       >
-        <label for="Name">Name</label>
-        <input id="Name" name="Name" className={styles.input}></input>
-        <label for="Email">Email</label>
+        <label for="Name">Nombre</label>
+        <input id="Name" name="Nombre" className={styles.input}></input>
+        <label for="Email">Correo</label>
         <input
           id="Email"
           name="Email"
           type="Email"
           className={styles.input}
         ></input>
-        <label for="Message">Message</label>
+        <label for="Message">Mensaje</label>
         <textarea id="Message" className={styles.textArea}></textarea>
-        <button type="submit">Send</button>
+        <button type="submit">Enviar</button>
       </form>
     </div>
   );

@@ -3,7 +3,7 @@
     padding-top: 100px;
     padding-bottom: 100px;
     flex-direction: column;
-    background: linear-gradient(180deg, #1a1826, #413b5e);
+    background: radial-gradient(circle, #1d3a6a,  #061228);
   }
   
   .title {

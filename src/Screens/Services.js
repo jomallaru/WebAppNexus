@@ -3,18 +3,12 @@ import styles from "./Services.module.css";
 
 const Services = () => {
   return (
-    <div name="Services" className={styles.services}>
-      <p>Solucionamos los problemas de tu empresa creando increíbles Apliaciones y páginas web</p>
-      <img
-        className={styles.webImage}
-        src={require("../assets/Inicio.gif")}
-        alt="Web Image"
-      />
-
+    <div name="Services" className={styles.services}>      
+      <p className={styles.textTitle}>Nuestros Productos y Servicios</p>
       <div className={styles.cardContainer}>
         <div className={styles.card}>
           <h2>Apliaciones Web</h2>
-          <p>Desarrollaremos aplicaciones web a medida que cumplen con los requisitos específicos de nuestros clientes. Desde plataformas de comercio electrónico hasta sistemas de gestión empresarial, nuestras aplicaciones están diseñadas para brindar funcionalidad y experiencia de usuario excepcionales.</p>
+          <p>Creamos aplicaciones web personalizadas que satisfacen las necesidades específicas de nuestros clientes, ofreciendo funcionalidad y experiencia de usuario excepcionales, desde plataformas de comercio electrónico hasta sistemas de gestión empresarial.</p>
         </div>
 
         <div className={styles.card}>
@@ -24,9 +18,10 @@ const Services = () => {
 
         <div className={styles.card}>
           <h2>Soporte y Mantenimiento</h2>
-          <p>Ofreceremos servicios integrales de soporte técnico y mantenimiento para garantizar el rendimiento continuo y la seguridad de las aplicaciones y sitios web. Esto incluye actualizaciones, monitoreo de seguridad y atención rápida a problemas técnicos</p>
+          <p>Ofrecemos soporte técnico y mantenimiento integral para garantizar el rendimiento y seguridad de aplicaciones y sitios web.</p>
         </div>
       </div>
+      <p>Solucionamos los problemas de tu empresa creando increíbles Apliaciones y páginas web</p>
     </div>
   );
 };

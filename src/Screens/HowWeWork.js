@@ -5,32 +5,42 @@ import Step from "../Components/Step";
 const HowWeWork = () => {
   const steps = [
     {
-      text: " You tell us your proposal.",
+      text: " Requerimientos:",
+      subText: "Comprender las necesidades del cliente ",
+      additionalText: "Analizar requisitos del proyecto",
       id: 1,
     },
     {
-      text: " We design your site and do a review.",
+      text: " Diseño y Planificación:",
+      subText: "Crear propuesta de diseño.",
+      additionalText: "Establecer roles y plazos.",
       id: 2,
     },
     {
-      text: " We develop your website.",
+      text: " Desarrollo e Implementación:",
+      subText: "Programar aplicaciones o páginas web.",
+      additionalText: "Realizar pruebas continuas.",
       id: 3,
     },
     {
-      text: " We deploy your website.",
+      text: " Mantenimiento y Actualización:",
+      subText: "Brindar servicios de mantenimiento.",
+      additionalText: "Realizar actualizaciones periódicas..",
       id: 4,
     },
     {
-      text: " You enjoy all the benefits of having a website for your company.",
+      text: " Colaboración y Comunicación:",
+      subText: "Mantener comunicación con el cliente.",
+      additionalText: "Colaborar internamente para mejoras continuas.",
       id: 5,
     },
   ];
 
   return (
     <div name="HowWeWork" className={styles.howWeWork}>
-      <h2 className={styles.title}>How We Work</h2>
+      <h2 className={styles.title}>Como Trabajamos</h2>
       {steps.map((x) => (
-        <Step text={x.text} step={x.id} />
+        <Step text={x.text} step={x.id} subText={x.subText} additionalText={x.additionalText} />
       ))}
     </div>
   );

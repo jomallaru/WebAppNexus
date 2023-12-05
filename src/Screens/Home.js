@@ -6,6 +6,7 @@ const Home = () => {
   return (
     <div name="Home" className={styles.home}>
       <div className={styles.titleContainer}>
+        <div className={styles.background}></div>
         <p>Potencia tu emprendimiento<br />
           <b>Desata tu potencial</b>
         </p>
@@ -32,7 +33,7 @@ const Home = () => {
         >
           Get a Quote
         </Link>
-      </div>
+      </div>      
     </div>
   );
 };

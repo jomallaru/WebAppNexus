@@ -10,32 +10,28 @@ import { FiRepeat } from "react-icons/fi";
 const Benefits = () => {
   return (
     <div name="Benefits" className={styles.benefits}>
-      <h2 className={styles.benefitTitle}>
-        Benefits of having a professional web
-      </h2>
-      <p>
-        You open up to the world <BsFillDoorOpenFill />
-      </p>
-      <p>
-        New customers
-        <FaPeopleCarry />
-      </p>
-      <p>
-        {" "}
-        Much lower costs <FaMoneyBillAlt />
-      </p>
-      <p>
-        No schedules
-        <AiOutlineSchedule />
-      </p>
-      <p>
-        Ultrasegmented marketing + high conversion
-        <AiOutlineRise />
-      </p>
-      <p>
-        Automation, less work, more performance
-        <FiRepeat />
-      </p>
+      <h2 className={styles.benefitTitle}>        
+          Beneficios de tener una web profesional
+        </h2>
+        <p>
+          Abres tu negocio al mundo <BsFillDoorOpenFill />
+        </p>
+        <p>
+          Nuevos clientes <FaPeopleCarry />
+        </p>
+        <p>
+          Costos mucho más bajos <FaMoneyBillAlt />
+        </p>
+        <p>
+          Sin horarios <AiOutlineSchedule />
+        </p>
+        <p>
+          Marketing ultrasegmentado + alta conversión <AiOutlineRise />
+        </p>
+        <p>
+          Automatización, menos trabajo, más rendimiento <FiRepeat />
+        </p>
+
     </div>
   );
 };

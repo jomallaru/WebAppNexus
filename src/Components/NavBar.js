@@ -32,6 +32,7 @@ const NavBar = () => {
     {
       id: 1,
       link: "Home",
+
     },
     {
       id: 2,
@@ -60,7 +61,7 @@ const NavBar = () => {
             : styles.navBar
       }
     >
-      {!navBarOpen && <p className={styles.logo}>WebApp nexus| Desarrollo de Aplicaciones Web</p>}
+      {!navBarOpen && <p className={styles.logo}>WebApp nexus</p>}
       {!navBarOpen && windowDimension.width < 800 ? (
         <CgMenuGridR
           color='#f1f1f1'
@@ -88,8 +89,12 @@ const NavBar = () => {
                 duration={500}
                 className={styles.navLink}
               >
-                {link === "Service" ? "Productos" : link}
-                {link === "HowWeWork" ? "Como lo Hacemos" : link}
+
+                {link === "HowWeWork" ? "Como Trabajamos"
+                  : link === "Home" ? "Inicio"
+                    : link === "Services" ? "Servicios"
+                      : link === "Benefits" ? "Beneficios"                       
+                          : link}
               </Link>
               <div className={styles.border}></div>
             </div>
@@ -107,7 +112,12 @@ const NavBar = () => {
                 duration={500}
                 className={styles.navLink}
               >
-                {link === "HowWeWork" ? "How we work" : link}
+                {link === "HowWeWork" ? "Como Trabajamos"
+                  : link === "Home" ? "Inicio"
+                    : link === "Services" ? "Servicios"
+                      : link === "Benefits" ? "Beneficios"                        
+                          : link}
+
               </Link>
               <div className={styles.border}></div>
             </div>
@@ -119,7 +129,7 @@ const NavBar = () => {
             duration={500}
             className={styles.contactLink}
           >
-            Contact
+            Contacto
           </Link>
         </ul>
       )}
