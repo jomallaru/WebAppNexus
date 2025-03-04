@@ -1,3 +1,10 @@
+## Propietario del Proyecto
+
+Este proyecto es mantenido por [Webapp Nexus] (https://github.com/jomallaru/webapp.git).
+
+Si tienes alguna pregunta o sugerencia, no dudes en contactarme a través de [jomallaru@gmail.com](mailto:jomallaru@gmail.com).
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

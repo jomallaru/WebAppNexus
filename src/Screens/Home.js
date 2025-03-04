@@ -23,7 +23,7 @@ const Home = () => {
           duration={500}
           className={styles.callToAction}
         >
-          Get in Touch
+          Ponerse en Contacto
         </Link>
         <Link
           to="Contact"
@@ -31,7 +31,7 @@ const Home = () => {
           duration={500}
           className={styles.callToAction}
         >
-          Get a Quote
+          Consigue una cotización
         </Link>
       </div>      
     </div>

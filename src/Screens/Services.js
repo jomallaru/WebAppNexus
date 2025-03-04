@@ -22,7 +22,7 @@ const Services = () => {
   const slideData = [
     {
       image: image1,
-      title: 'Aplicación',
+      title: 'Aplicaciones',
       description: 'Desarrollamos aplicaciones personalizadas para tus necesidades.',
     },
     {
@@ -33,7 +33,7 @@ const Services = () => {
     {
       image: image3,
       title: 'Soporte',
-      description: 'Brindamos soporte técnico para garantizar el funcionamiento de tus sistemas.',
+      description: 'Ofrecemos soporte técnico especializado para asegurar el óptimo funcionamiento de tus páginas y aplicaciones web.',
     },
     // Agrega más datos para más slides según sea necesario
   ];

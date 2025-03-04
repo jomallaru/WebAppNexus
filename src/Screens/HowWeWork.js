@@ -6,32 +6,32 @@ const HowWeWork = () => {
   const steps = [
     {
       text: " Requerimientos:",
-      subText: "Comprender las necesidades del cliente ",
-      additionalText: "Analizar requisitos del proyecto",
+      subText: "Comprenderemos los requisitos del cliente.",
+      additionalText: "Analizaremos las necesidades del cliente.",
       id: 1,
     },
     {
       text: " Diseño y Planificación:",
-      subText: "Crear propuesta de diseño.",
-      additionalText: "Establecer roles y plazos.",
+      subText: "Crearemos un plan de negocio.",
+      additionalText: "Estableceremos las metas y objetivos.",
       id: 2,
     },
     {
       text: " Desarrollo e Implementación:",
-      subText: "Programar aplicaciones o páginas web.",
-      additionalText: "Realizar pruebas continuas.",
+      subText: "Programaremos el proyecto.",
+      additionalText: "Realizaremos el diseño y desarrollo.",
       id: 3,
     },
     {
       text: " Mantenimiento y Actualización:",
-      subText: "Brindar servicios de mantenimiento.",
-      additionalText: "Realizar actualizaciones periódicas..",
+      subText: "Brindaremos soporte técnico.",
+      additionalText: "Realizaremos actualizaciones y mantenimiento.",
       id: 4,
     },
     {
       text: " Colaboración y Comunicación:",
-      subText: "Mantener comunicación con el cliente.",
-      additionalText: "Colaborar internamente para mejoras continuas.",
+      subText: "Mantedremos la comunicación con el cliente.",
+      additionalText: "Colaboraremos con el cliente.",
       id: 5,
     },
   ];
